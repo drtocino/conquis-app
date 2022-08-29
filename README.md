@@ -7,10 +7,10 @@ Hope this goes to somewhere
 
 ## Available Scripts
 
-### `npm start`
+### `expo start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It can be opened from any phone with the expo go app installed by scanning th qr .
 
 ### Dev info
 This aplication is being build with the Expo SDK v 45
