@@ -1,6 +1,8 @@
-import * as firebase from 'firebase';
-import "firebase/firestore";
-import "firebase/auth";
+// import * as firebase from 'firebase';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs,orderBy,query } from 'firebase/firestore/lite';
+// import "firebase/firestore";
+// import "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyATq8qaONRbJ-nFcg-Gxg7cFyjE7x7ZQs0",  
@@ -12,11 +14,15 @@ const firebaseConfig = {
     measurementId: "G-EY3YR9ZQKE"
 };
 
-if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-}
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// if (!firebase.apps.length) {
+//     firebase.initializeApp(firebaseConfig);
+// }
 
 export {
-    firebase
+    // firebase,
+    db,
 }
   

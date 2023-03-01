@@ -9,6 +9,8 @@ import st from './styles/Style';
 import Inicio from './screens/Inicio';
 import Especialidades from './screens/Especialidades';
 import Register from './screens/Register';
+import Especialidad from './screens/Especialidad';
+import Categorias from './screens/Categorias';
 
 const Drawer = createDrawerNavigator();
 // const Stack = createNativeStackNavigator();
@@ -41,6 +43,11 @@ function MyDrawer(){
             <MaterialIcons name='verified-user' color={color} size={20}  />
           </View>
         )}}  />
+        {/* <Drawer.Screen name="Especialidades de categoria" component={Especialidad} options={{headerStyle: {height: 0},headerShown: false,drawerIcon: ({focused,size,color}) => (
+          <View style={[focused ? st.borderAmber600 : st.borderSlate900,st.borderWL4]}>
+            <MaterialIcons name='verified-user' color={color} size={20}  />
+          </View>
+        )}}  /> */}
         
       </Drawer.Navigator>
   )
